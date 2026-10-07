@@ -36,7 +36,7 @@ family income.
   policies (server secret key only). Neither is ever shared publicly.
 - Summary page is locked by `SUMMARY_PASSWORD` when hosted.
 - Test data is fabricated ("Test Student 1"), never a real child's answers.
-- Only first name, class and cluster results go to the LLM. Nothing else.
+- Only first name, class, cluster results and typed answers go to the LLM. Nothing else.
 - Get the school's permission before survey day.
 
 ## Rule 2 — Single source of truth; data over hardcoding
@@ -48,6 +48,8 @@ family income.
 | Careers, routes, next steps per cluster | `data/careers.json` |
 | Scoring logic | `scoring.py` — one function, used by app and summary page |
 | UI labels (en/mr/hi) | `data/ui_text.json` |
+| Cluster colours + icons | `data/careers.json` |
+| Styling | `style.css` + `.streamlit/config.toml` |
 | LLM model name | `.streamlit/secrets.toml` (`GROQ_MODEL`) — swap models without code edits |
 | Where responses are saved | `storage.py` only |
 

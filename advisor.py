@@ -70,7 +70,8 @@ def _chat(system, user, json_mode=False):
             **({"reasoning_effort": "low"} if model.startswith("openai/gpt-oss") else {}),
             **({"response_format": {"type": "json_object"}} if json_mode else {}),
         )
-        return resp.choices[0].message.content.strip() or None
+        # Mukta can't render zero-width joiners (e.g. "अ‍ॅ"); dropping them keeps the text readable
+        return resp.choices[0].message.content.replace("\u200d", "").strip() or None
     except Exception as e:
         print(f"AI call failed, using offline fallback: {e!r}", file=sys.stderr)
         return None

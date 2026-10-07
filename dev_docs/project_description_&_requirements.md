@@ -45,6 +45,18 @@ Start → Profile (first name, class, school, result language)
       → Saved to data/responses.csv → "Next student" button
 ```
 
+**Typed answers [2026-10-08]:** every question also has "Or type your own
+answer". Typed answers are stored as option `-1` + text in `typed_answers`
+(JSON). At the end, one AI call (`classify_typed`) maps each to ≤2 clusters
+(1–2 pts) or, for Q10, a route; output is validated, anything invalid scores
+0. Offline → typed answers score 0. Typed text is also passed to the
+guidance message so the AI responds to the child's own words.
+
+**Design [2026-10-08]:** app named **Disha · दिशा**. Mukta font (Latin +
+Devanagari), white answer cards, coloured card per cluster (`color` in
+`careers.json`), career chips, advice panel, free-help links. No sidebar;
+volunteer reaches the summary via a link on the start screen.
+
 Separate page **Survey Summary**: total students, bar chart of top cluster
 counts, route split, CSV download — for the college report.
 
@@ -225,9 +237,10 @@ bad Groq key, unreachable Supabase, password-locked summary page.
 
 | File | Role |
 |---|---|
-| `app.py` | Profile → 10 questions → result |
+| `app.py` | Profile → 10 questions (+ typed answers) → result |
+| `style.css` | All custom styling |
 | `scoring.py` | Loads JSON data, `score()` → top 2 clusters + route |
-| `advisor.py` | Groq message (8 s timeout) + offline message |
+| `advisor.py` | Groq: `classify_typed` + guidance message (8 s timeout each); offline message |
 | `storage.py` | Save/load responses (Supabase or CSV) |
 | `config.py` | `secret()` — reads secrets, returns default if none |
 | `pages/1_Survey_Summary.py` | Charts, table, CSV download; `SUMMARY_PASSWORD` lock |
@@ -236,7 +249,7 @@ bad Groq key, unreachable Supabase, password-locked summary page.
 | `.streamlit/secrets.toml.example` | Every secret name with placeholders |
 
 Privacy details: only the first word of the name is stored; only first name,
-class and cluster results are sent to Groq.
+class, cluster results and typed answers are sent to Groq.
 
 ---
 

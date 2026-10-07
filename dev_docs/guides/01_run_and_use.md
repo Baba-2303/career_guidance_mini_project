@@ -51,6 +51,10 @@ Wi-Fi/hotspot, then open the **Network URL** printed in Terminal
    School, and the language the child is comfortable in → **Start**.
 2. **10 questions:** one per screen. Read aloud if needed; the child taps an
    answer and the next question appears. **← Back** fixes a wrong tap.
+   - None of the options fit? The child types their own answer in the box
+     under the options (any language, even Hinglish) → **Next →**. The AI
+     reads it and scores it. Without internet a typed answer scores nothing,
+     so prefer tapping an option when offline.
 3. **Result:** two best-fit career areas with % match, careers for the route
    the child picked, and a personal advice message. Let the child read it or
    take a photo of the screen.
@@ -62,7 +66,8 @@ Responses save automatically. Nothing to click.
 
 ## D. Survey Summary (for the report)
 
-Click **Survey Summary** in the left sidebar (tap `>` on phone).
+On the start screen, tap **Volunteer: Survey summary** (bottom). **Back to
+survey** returns. (There's no sidebar, so children can't wander in.)
 
 - Total students, schools, charts of career areas, routes, by class
 - Full table of responses
@@ -109,6 +114,7 @@ and refresh the browser. Keep the punctuation (`"` `,` `{ }`) exactly as it is.
 | Which career area an answer points to | `points` in `data/questions.json` |
 | Career names, courses, advice | `data/careers.json` |
 | Buttons and labels | `data/ui_text.json` |
+| Colours, fonts, spacing | `style.css`, `.streamlit/config.toml` (theme) |
 
 ---
 
