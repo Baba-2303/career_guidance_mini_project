@@ -1,0 +1,155 @@
+[
+  {
+    "id": "q1",
+    "text": {
+      "en": "Which subject do you enjoy the most?",
+      "mr": "तुम्हाला कोणता विषय सर्वात जास्त आवडतो?",
+      "hi": "तुम्हें कौन सा विषय सबसे ज़्यादा पसंद है?"
+    },
+    "options": [
+      { "text": { "en": "Science", "mr": "विज्ञान", "hi": "विज्ञान" }, "points": { "HEALTH": 2, "TECH": 1 } },
+      { "text": { "en": "Maths", "mr": "गणित", "hi": "गणित" }, "points": { "TECH": 2, "BIZ": 1 } },
+      { "text": { "en": "Languages / History / Civics", "mr": "भाषा / इतिहास / नागरिकशास्त्र", "hi": "भाषाएँ / इतिहास / नागरिक शास्त्र" }, "points": { "SERVE": 2, "ARTS": 1 } },
+      { "text": { "en": "Drawing / Music / Craft", "mr": "चित्रकला / संगीत / हस्तकला", "hi": "चित्रकला / संगीत / हस्तकला" }, "points": { "ARTS": 2, "SKILL": 1 } },
+      { "text": { "en": "Work Experience / PE / practical work", "mr": "कार्यानुभव / शारीरिक शिक्षण / प्रात्यक्षिक काम", "hi": "कार्य अनुभव / शारीरिक शिक्षा / प्रैक्टिकल काम" }, "points": { "SKILL": 2 } }
+    ]
+  },
+  {
+    "id": "q2",
+    "text": {
+      "en": "What do you like doing in your free time?",
+      "mr": "मोकळ्या वेळेत तुम्हाला काय करायला आवडते?",
+      "hi": "खाली समय में तुम्हें क्या करना पसंद है?"
+    },
+    "options": [
+      { "text": { "en": "Drawing, dancing, singing or making videos", "mr": "चित्र काढणे, नाचणे, गाणे किंवा व्हिडिओ बनवणे", "hi": "चित्र बनाना, नाचना, गाना या वीडियो बनाना" }, "points": { "ARTS": 2 } },
+      { "text": { "en": "Opening or fixing gadgets", "mr": "उपकरणे उघडून पाहणे किंवा दुरुस्त करणे", "hi": "मशीन या गैजेट खोलकर देखना या ठीक करना" }, "points": { "TECH": 2, "SKILL": 1 } },
+      { "text": { "en": "Helping at a shop, counting money", "mr": "दुकानात मदत करणे, पैसे मोजणे", "hi": "दुकान पर मदद करना, पैसे गिनना" }, "points": { "BIZ": 2 } },
+      { "text": { "en": "Reading about the body, animals or plants", "mr": "शरीर, प्राणी किंवा झाडांबद्दल वाचणे", "hi": "शरीर, जानवरों या पौधों के बारे में पढ़ना" }, "points": { "HEALTH": 2 } },
+      { "text": { "en": "Teaching younger kids, helping neighbours", "mr": "लहान मुलांना शिकवणे, शेजाऱ्यांना मदत करणे", "hi": "छोटे बच्चों को पढ़ाना, पड़ोसियों की मदद करना" }, "points": { "SERVE": 2 } },
+      { "text": { "en": "Cooking, stitching or building things", "mr": "स्वयंपाक, शिवणकाम किंवा वस्तू बनवणे", "hi": "खाना बनाना, सिलाई करना या चीज़ें बनाना" }, "points": { "SKILL": 2, "ARTS": 1 } }
+    ]
+  },
+  {
+    "id": "q3",
+    "text": {
+      "en": "A neighbour needs help. Which problem would you jump in to solve?",
+      "mr": "शेजाऱ्याला मदत हवी आहे. तुम्ही कोणती अडचण सोडवायला पुढे याल?",
+      "hi": "पड़ोसी को मदद चाहिए। तुम कौन सी समस्या हल करने आगे आओगे?"
+    },
+    "options": [
+      { "text": { "en": "Someone is sick", "mr": "कोणीतरी आजारी आहे", "hi": "कोई बीमार है" }, "points": { "HEALTH": 2, "SERVE": 1 } },
+      { "text": { "en": "The fan or phone stopped working", "mr": "पंखा किंवा फोन बंद पडला आहे", "hi": "पंखा या फ़ोन खराब हो गया है" }, "points": { "SKILL": 2, "TECH": 1 } },
+      { "text": { "en": "Planning the budget for a festival", "mr": "सणाच्या खर्चाचे नियोजन करणे", "hi": "त्योहार के खर्च की योजना बनाना" }, "points": { "BIZ": 2 } },
+      { "text": { "en": "Decorating or making a poster", "mr": "सजावट करणे किंवा पोस्टर बनवणे", "hi": "सजावट करना या पोस्टर बनाना" }, "points": { "ARTS": 2 } },
+      { "text": { "en": "A child can't understand homework", "mr": "एका मुलाला गृहपाठ समजत नाही", "hi": "किसी बच्चे को होमवर्क समझ नहीं आ रहा" }, "points": { "SERVE": 2 } }
+    ]
+  },
+  {
+    "id": "q4",
+    "text": {
+      "en": "Where would you like to work when you grow up?",
+      "mr": "मोठे झाल्यावर तुम्हाला कुठे काम करायला आवडेल?",
+      "hi": "बड़े होकर तुम कहाँ काम करना चाहोगे?"
+    },
+    "options": [
+      { "text": { "en": "Hospital or laboratory", "mr": "रुग्णालय किंवा प्रयोगशाळा", "hi": "अस्पताल या प्रयोगशाला" }, "points": { "HEALTH": 2 } },
+      { "text": { "en": "Office with computers", "mr": "संगणक असलेले ऑफिस", "hi": "कंप्यूटर वाला ऑफिस" }, "points": { "TECH": 2, "BIZ": 1 } },
+      { "text": { "en": "My own shop or business", "mr": "माझे स्वतःचे दुकान किंवा व्यवसाय", "hi": "मेरी अपनी दुकान या बिज़नेस" }, "points": { "BIZ": 2 } },
+      { "text": { "en": "Studio, stage or film set", "mr": "स्टुडिओ, स्टेज किंवा चित्रपटाचा सेट", "hi": "स्टूडियो, स्टेज या फ़िल्म सेट" }, "points": { "ARTS": 2 } },
+      { "text": { "en": "School, police station or government office", "mr": "शाळा, पोलीस ठाणे किंवा सरकारी कार्यालय", "hi": "स्कूल, पुलिस स्टेशन या सरकारी दफ़्तर" }, "points": { "SERVE": 2 } },
+      { "text": { "en": "Workshop, garage, kitchen or salon", "mr": "वर्कशॉप, गॅरेज, किचन किंवा सलून", "hi": "वर्कशॉप, गैराज, रसोई या सैलून" }, "points": { "SKILL": 2 } }
+    ]
+  },
+  {
+    "id": "q5",
+    "text": {
+      "en": "Your friends say you are good at…",
+      "mr": "तुमचे मित्र म्हणतात की तुम्ही यात हुशार आहात…",
+      "hi": "तुम्हारे दोस्त कहते हैं कि तुम इसमें अच्छे हो…"
+    },
+    "options": [
+      { "text": { "en": "Taking care of people", "mr": "लोकांची काळजी घेणे", "hi": "लोगों का ख्याल रखना" }, "points": { "HEALTH": 2, "SERVE": 1 } },
+      { "text": { "en": "Solving puzzles and maths", "mr": "कोडी आणि गणित सोडवणे", "hi": "पहेलियाँ और गणित हल करना" }, "points": { "TECH": 2 } },
+      { "text": { "en": "Talking and convincing people", "mr": "बोलणे आणि लोकांना पटवून देणे", "hi": "बात करना और लोगों को मनाना" }, "points": { "BIZ": 2 } },
+      { "text": { "en": "Coming up with new ideas", "mr": "नवीन कल्पना सुचणे", "hi": "नए आइडिया सोचना" }, "points": { "ARTS": 2 } },
+      { "text": { "en": "Explaining things and leading the group", "mr": "गोष्टी समजावून सांगणे आणि गटाचे नेतृत्व करणे", "hi": "बातें समझाना और ग्रुप को लीड करना" }, "points": { "SERVE": 2 } },
+      { "text": { "en": "Making or repairing things with hands", "mr": "हाताने वस्तू बनवणे किंवा दुरुस्त करणे", "hi": "हाथों से चीज़ें बनाना या ठीक करना" }, "points": { "SKILL": 2 } }
+    ]
+  },
+  {
+    "id": "q6",
+    "text": {
+      "en": "Which videos would you watch for an hour?",
+      "mr": "तुम्ही तासभर कोणते व्हिडिओ पाहाल?",
+      "hi": "तुम एक घंटे तक कौन से वीडियो देखोगे?"
+    },
+    "options": [
+      { "text": { "en": "How the human body works, doctors", "mr": "मानवी शरीर कसे काम करते, डॉक्टर", "hi": "इंसानी शरीर कैसे काम करता है, डॉक्टर" }, "points": { "HEALTH": 2 } },
+      { "text": { "en": "Gadgets, robots, coding", "mr": "गॅजेट्स, रोबोट, कोडिंग", "hi": "गैजेट्स, रोबोट, कोडिंग" }, "points": { "TECH": 2 } },
+      { "text": { "en": "Success stories of business people", "mr": "उद्योजकांच्या यशोगाथा", "hi": "बिज़नेस करने वालों की सफलता की कहानियाँ" }, "points": { "BIZ": 2 } },
+      { "text": { "en": "Music, dance, art, films", "mr": "संगीत, नृत्य, कला, चित्रपट", "hi": "संगीत, नृत्य, कला, फ़िल्में" }, "points": { "ARTS": 2 } },
+      { "text": { "en": "Stories of brave officers, teachers, social workers", "mr": "शूर अधिकारी, शिक्षक, समाजसेवकांच्या गोष्टी", "hi": "बहादुर अफ़सरों, शिक्षकों, समाजसेवकों की कहानियाँ" }, "points": { "SERVE": 2 } },
+      { "text": { "en": "Cooking, DIY, repair", "mr": "स्वयंपाक, स्वतः वस्तू बनवणे, दुरुस्ती", "hi": "खाना बनाना, खुद चीज़ें बनाना, रिपेयर" }, "points": { "SKILL": 2 } }
+    ]
+  },
+  {
+    "id": "q7",
+    "text": {
+      "en": "In 10 years, what would make you proudest?",
+      "mr": "१० वर्षांनंतर कोणत्या गोष्टीचा तुम्हाला सर्वात जास्त अभिमान वाटेल?",
+      "hi": "10 साल बाद किस बात पर तुम्हें सबसे ज़्यादा गर्व होगा?"
+    },
+    "options": [
+      { "text": { "en": "I helped people get healthy", "mr": "मी लोकांना निरोगी होण्यास मदत केली", "hi": "मैंने लोगों को स्वस्थ होने में मदद की" }, "points": { "HEALTH": 2 } },
+      { "text": { "en": "I built or invented something", "mr": "मी काहीतरी बनवले किंवा शोधले", "hi": "मैंने कुछ बनाया या आविष्कार किया" }, "points": { "TECH": 2 } },
+      { "text": { "en": "I run my own business", "mr": "मी माझा स्वतःचा व्यवसाय चालवतो/चालवते", "hi": "मैं अपना खुद का बिज़नेस चलाता/चलाती हूँ" }, "points": { "BIZ": 2 } },
+      { "text": { "en": "People know me for my art", "mr": "लोक मला माझ्या कलेमुळे ओळखतात", "hi": "लोग मुझे मेरी कला से जानते हैं" }, "points": { "ARTS": 2 } },
+      { "text": { "en": "I served my village or city", "mr": "मी माझ्या गावाची किंवा शहराची सेवा केली", "hi": "मैंने अपने गाँव या शहर की सेवा की" }, "points": { "SERVE": 2 } },
+      { "text": { "en": "I mastered a skill and everyone calls me for it", "mr": "मी एका कौशल्यात पारंगत आहे आणि सगळे मला त्यासाठी बोलावतात", "hi": "मैं किसी हुनर में माहिर हूँ और सब मुझे उसके लिए बुलाते हैं" }, "points": { "SKILL": 2 } }
+    ]
+  },
+  {
+    "id": "q8",
+    "text": {
+      "en": "What do you like working with most?",
+      "mr": "तुम्हाला कशासोबत काम करायला सर्वात जास्त आवडते?",
+      "hi": "तुम्हें किसके साथ काम करना सबसे ज़्यादा पसंद है?"
+    },
+    "options": [
+      { "text": { "en": "People", "mr": "लोक", "hi": "लोग" }, "points": { "SERVE": 2, "HEALTH": 1 } },
+      { "text": { "en": "Living things — plants, animals, body", "mr": "सजीव — झाडे, प्राणी, शरीर", "hi": "सजीव चीज़ें — पौधे, जानवर, शरीर" }, "points": { "HEALTH": 2 } },
+      { "text": { "en": "Machines and tools", "mr": "यंत्रे आणि हत्यारे", "hi": "मशीनें और औज़ार" }, "points": { "SKILL": 2, "TECH": 1 } },
+      { "text": { "en": "Numbers and money", "mr": "आकडे आणि पैसे", "hi": "अंक और पैसे" }, "points": { "BIZ": 2, "TECH": 1 } },
+      { "text": { "en": "Colours, words and designs", "mr": "रंग, शब्द आणि डिझाइन", "hi": "रंग, शब्द और डिज़ाइन" }, "points": { "ARTS": 2 } }
+    ]
+  },
+  {
+    "id": "q9",
+    "text": {
+      "en": "What matters most to you in a job?",
+      "mr": "नोकरीमध्ये तुमच्यासाठी सर्वात महत्त्वाचे काय आहे?",
+      "hi": "नौकरी में तुम्हारे लिए सबसे ज़रूरी क्या है?"
+    },
+    "options": [
+      { "text": { "en": "Helping people", "mr": "लोकांना मदत करणे", "hi": "लोगों की मदद करना" }, "points": { "HEALTH": 1, "SERVE": 1 } },
+      { "text": { "en": "Earning a good salary", "mr": "चांगला पगार मिळवणे", "hi": "अच्छी तनख्वाह कमाना" }, "points": { "TECH": 1, "BIZ": 1 } },
+      { "text": { "en": "Freedom to be creative", "mr": "नवनिर्मितीचे स्वातंत्र्य", "hi": "अपनी रचनात्मकता दिखाने की आज़ादी" }, "points": { "ARTS": 2 } },
+      { "text": { "en": "A safe government job", "mr": "सुरक्षित सरकारी नोकरी", "hi": "पक्की सरकारी नौकरी" }, "points": { "SERVE": 2 } },
+      { "text": { "en": "Being my own boss", "mr": "स्वतःचा मालक असणे", "hi": "खुद का मालिक होना" }, "points": { "BIZ": 1, "SKILL": 1 } }
+    ]
+  },
+  {
+    "id": "q10",
+    "text": {
+      "en": "After Class 10, what would you prefer?",
+      "mr": "दहावीनंतर तुम्हाला काय करायला आवडेल?",
+      "hi": "10वीं के बाद तुम क्या करना चाहोगे?"
+    },
+    "options": [
+      { "text": { "en": "Learn a skill and start earning soon (1–2 years)", "mr": "एखादे कौशल्य शिकून लवकर कमाई सुरू करणे (१–२ वर्षे)", "hi": "कोई हुनर सीखकर जल्दी कमाना शुरू करना (1–2 साल)" }, "route": "SHORT" },
+      { "text": { "en": "Finish Class 12, then a diploma or 3-year degree", "mr": "बारावी पूर्ण करून डिप्लोमा किंवा ३ वर्षांची पदवी", "hi": "12वीं पूरी करके डिप्लोमा या 3 साल की डिग्री" }, "route": "MEDIUM" },
+      { "text": { "en": "Study long for a professional degree (4+ years)", "mr": "व्यावसायिक पदवीसाठी जास्त वर्षे शिकणे (४+ वर्षे)", "hi": "प्रोफ़ेशनल डिग्री के लिए लंबी पढ़ाई (4+ साल)" }, "route": "LONG" }
+    ]
+  }
+]

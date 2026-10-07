@@ -1,0 +1,92 @@
+{
+  "question_of": {
+    "en": "Question {n} of {total}",
+    "mr": "प्रश्न {n} / {total}",
+    "hi": "प्रश्न {n} / {total}"
+  },
+  "back": {
+    "en": "← Back",
+    "mr": "← मागे",
+    "hi": "← पीछे"
+  },
+  "preparing": {
+    "en": "Preparing your guidance…",
+    "mr": "तुमचे मार्गदर्शन तयार होत आहे…",
+    "hi": "तुम्हारा मार्गदर्शन तैयार हो रहा है…"
+  },
+  "result_title": {
+    "en": "{name}, here are your career areas",
+    "mr": "{name}, ही आहेत तुमची करिअर क्षेत्रे",
+    "hi": "{name}, ये हैं तुम्हारे करियर क्षेत्र"
+  },
+  "match": {
+    "en": "match",
+    "mr": "जुळणी",
+    "hi": "मेल"
+  },
+  "careers_for_you": {
+    "en": "Careers for you",
+    "mr": "तुमच्यासाठी करिअर",
+    "hi": "तुम्हारे लिए करियर"
+  },
+  "advice": {
+    "en": "Advice for you",
+    "mr": "तुमच्यासाठी सल्ला",
+    "hi": "तुम्हारे लिए सलाह"
+  },
+  "offline_intro": {
+    "en": "{name}, you are a great fit for {area}.",
+    "mr": "{name}, तुम्ही {area} या क्षेत्रासाठी अगदी योग्य आहात.",
+    "hi": "{name}, तुम {area} क्षेत्र के लिए बिल्कुल सही हो।"
+  },
+  "disclaimer": {
+    "en": "This is guidance, not a final decision. Talk to your teachers and parents.",
+    "mr": "हे फक्त मार्गदर्शन आहे, अंतिम निर्णय नाही. तुमच्या शिक्षकांशी आणि पालकांशी बोला.",
+    "hi": "यह सिर्फ़ मार्गदर्शन है, अंतिम फ़ैसला नहीं। अपने शिक्षकों और माता-पिता से बात करो।"
+  },
+  "next_student": {
+    "en": "Next student",
+    "mr": "पुढील विद्यार्थी",
+    "hi": "अगला विद्यार्थी"
+  },
+  "tagline": {
+    "en": "Find the career path that suits you",
+    "mr": "तुमच्यासाठी योग्य करिअरचा मार्ग शोधा",
+    "hi": "अपने लिए सही करियर का रास्ता खोजो"
+  },
+  "other_title": {
+    "en": "Or type your own answer",
+    "mr": "किंवा तुमचे स्वतःचे उत्तर लिहा",
+    "hi": "या अपना खुद का जवाब लिखो"
+  },
+  "other_placeholder": {
+    "en": "Type here…",
+    "mr": "इथे लिहा…",
+    "hi": "यहाँ लिखो…"
+  },
+  "other_next": {
+    "en": "Next →",
+    "mr": "पुढे →",
+    "hi": "आगे →"
+  },
+  "other_empty": {
+    "en": "Please type an answer or tap an option above.",
+    "mr": "कृपया उत्तर लिहा किंवा वरील पर्याय निवडा.",
+    "hi": "कृपया जवाब लिखो या ऊपर से कोई विकल्प चुनो।"
+  },
+  "your_path": {
+    "en": "Your path after Class 10",
+    "mr": "दहावीनंतरचा तुमचा मार्ग",
+    "hi": "10वीं के बाद तुम्हारा रास्ता"
+  },
+  "free_help": {
+    "en": "Free help",
+    "mr": "मोफत मदत",
+    "hi": "मुफ़्त मदद"
+  },
+  "own_answer": {
+    "en": "Your own answer",
+    "mr": "तुमचे स्वतःचे उत्तर",
+    "hi": "तुम्हारा अपना जवाब"
+  }
+}

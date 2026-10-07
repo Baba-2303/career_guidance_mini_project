@@ -1,0 +1,21 @@
+[theme]
+base = "light"
+primaryColor = "#1D4ED8"
+backgroundColor = "#F5F7FB"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#111827"
+borderColor = "#DDE3EC"
+font = "Mukta:https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap, sans-serif"
+baseFontSize = 17
+baseRadius = "large"
+buttonRadius = "large"
+headingFontWeights = [700, 700, 650, 600, 600, 600]
+showWidgetBorder = true
+
+[client]
+toolbarMode = "minimal"
+# Kids shouldn't wander into the summary; volunteer uses the link on the start screen
+showSidebarNavigation = false
+
+[browser]
+gatherUsageStats = false

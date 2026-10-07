@@ -1,0 +1,210 @@
+{
+  "HEALTH": {
+    "name": {
+      "en": "Science & Health",
+      "mr": "विज्ञान आणि आरोग्य",
+      "hi": "विज्ञान और स्वास्थ्य"
+    },
+    "color": "#059669",
+    "icon": "medical_services",
+    "routes": {
+      "SHORT": [
+        "General Duty Assistant",
+        "Pharmacy Assistant",
+        "Lab Assistant"
+      ],
+      "MEDIUM": [
+        "ANM/GNM Nurse",
+        "DMLT Lab Technician",
+        "D.Pharm Pharmacist"
+      ],
+      "LONG": [
+        "MBBS Doctor",
+        "B.Sc Nursing",
+        "B.Pharm",
+        "Physiotherapist"
+      ]
+    },
+    "subjects_to_focus": [
+      "Science",
+      "English"
+    ],
+    "next_steps": {
+      "en": "Work hard on Science in Class 9 and 10. Ask your teacher about the Science stream after Class 10, and check free scholarships on scholarships.gov.in.",
+      "mr": "नववी-दहावीत विज्ञानावर जास्त मेहनत घ्या. दहावीनंतर विज्ञान शाखेबद्दल शिक्षकांना विचारा आणि scholarships.gov.in वर मोफत शिष्यवृत्ती पहा.",
+      "hi": "9वीं और 10वीं में विज्ञान पर खूब मेहनत करो। 10वीं के बाद साइंस स्ट्रीम के बारे में अपने शिक्षक से पूछो और scholarships.gov.in पर मुफ़्त छात्रवृत्ति देखो।"
+    }
+  },
+  "TECH": {
+    "name": {
+      "en": "Technology & Engineering",
+      "mr": "तंत्रज्ञान आणि अभियांत्रिकी",
+      "hi": "तकनीक और इंजीनियरिंग"
+    },
+    "color": "#2563EB",
+    "icon": "memory",
+    "routes": {
+      "SHORT": [
+        "ITI Electronics Mechanic",
+        "Computer Operator (COPA)",
+        "Mobile Repair Technician"
+      ],
+      "MEDIUM": [
+        "Polytechnic Diploma Engineer",
+        "BCA / B.Sc IT"
+      ],
+      "LONG": [
+        "B.E./B.Tech Engineer",
+        "Software Developer",
+        "Data Analyst"
+      ]
+    },
+    "subjects_to_focus": [
+      "Maths",
+      "Science"
+    ],
+    "next_steps": {
+      "en": "Practise Maths every day and try free computer courses on skillindiadigital.gov.in. Visit your nearest ITI or polytechnic to see the courses.",
+      "mr": "रोज गणिताचा सराव करा आणि skillindiadigital.gov.in वर मोफत संगणक कोर्स करून पहा. जवळच्या ITI किंवा पॉलिटेक्निकला भेट देऊन कोर्सेस पहा.",
+      "hi": "रोज़ गणित का अभ्यास करो और skillindiadigital.gov.in पर मुफ़्त कंप्यूटर कोर्स आज़माओ। नज़दीकी ITI या पॉलिटेक्निक जाकर कोर्स देखो।"
+    }
+  },
+  "BIZ": {
+    "name": {
+      "en": "Business & Commerce",
+      "mr": "व्यवसाय आणि वाणिज्य",
+      "hi": "व्यापार और वाणिज्य"
+    },
+    "color": "#B45309",
+    "icon": "storefront",
+    "routes": {
+      "SHORT": [
+        "Sales Associate",
+        "Tally Accounts Assistant",
+        "Small Business Owner"
+      ],
+      "MEDIUM": [
+        "B.Com Graduate",
+        "Banking / Insurance Agent"
+      ],
+      "LONG": [
+        "Chartered Accountant",
+        "MBA Manager",
+        "Company Secretary"
+      ]
+    },
+    "subjects_to_focus": [
+      "Maths",
+      "English"
+    ],
+    "next_steps": {
+      "en": "Get strong in Maths and learn how money is counted and saved. After Class 10, the Commerce stream is a good path; ask your teacher about it.",
+      "mr": "गणित पक्के करा आणि पैशांचा हिशोब व बचत कशी करतात ते शिका. दहावीनंतर वाणिज्य शाखा चांगला मार्ग आहे; शिक्षकांना विचारा.",
+      "hi": "गणित मज़बूत करो और पैसों का हिसाब और बचत करना सीखो। 10वीं के बाद कॉमर्स स्ट्रीम अच्छा रास्ता है; अपने शिक्षक से पूछो।"
+    }
+  },
+  "ARTS": {
+    "name": {
+      "en": "Creative Arts & Media",
+      "mr": "कला आणि माध्यमे",
+      "hi": "कला और मीडिया"
+    },
+    "color": "#DB2777",
+    "icon": "palette",
+    "routes": {
+      "SHORT": [
+        "Tailoring / Fashion Certificate",
+        "Photographer",
+        "Video Editor"
+      ],
+      "MEDIUM": [
+        "Graphic Designer (Diploma)",
+        "Animator (Diploma)",
+        "BMM Graduate"
+      ],
+      "LONG": [
+        "B.Des Designer",
+        "BFA Artist",
+        "Journalist"
+      ]
+    },
+    "subjects_to_focus": [
+      "Drawing",
+      "Languages"
+    ],
+    "next_steps": {
+      "en": "Keep drawing, writing or making videos every week and save your best work. Free design and video courses are on skillindiadigital.gov.in.",
+      "mr": "दर आठवड्याला चित्र काढणे, लिहिणे किंवा व्हिडिओ बनवणे चालू ठेवा आणि तुमचे उत्तम काम जपून ठेवा. skillindiadigital.gov.in वर मोफत डिझाइन व व्हिडिओ कोर्स आहेत.",
+      "hi": "हर हफ़्ते चित्र बनाना, लिखना या वीडियो बनाना जारी रखो और अपना सबसे अच्छा काम संभालकर रखो। skillindiadigital.gov.in पर मुफ़्त डिज़ाइन और वीडियो कोर्स हैं।"
+    }
+  },
+  "SERVE": {
+    "name": {
+      "en": "Teaching & Public Service",
+      "mr": "शिक्षण आणि लोकसेवा",
+      "hi": "शिक्षण और जनसेवा"
+    },
+    "color": "#7C3AED",
+    "icon": "school",
+    "routes": {
+      "SHORT": [
+        "Agniveer (Armed Forces)",
+        "Anganwadi Helper",
+        "Community Volunteer"
+      ],
+      "MEDIUM": [
+        "D.El.Ed Primary Teacher",
+        "Police Constable",
+        "Railway / MPSC Clerk"
+      ],
+      "LONG": [
+        "B.Ed Teacher",
+        "Social Worker (BSW/MSW)",
+        "Lawyer",
+        "UPSC / MPSC Officer"
+      ]
+    },
+    "subjects_to_focus": [
+      "Languages",
+      "History & Civics"
+    ],
+    "next_steps": {
+      "en": "Read newspapers, improve your languages and join school activities. Ask your teacher about government exams and teacher training after Class 12.",
+      "mr": "वर्तमानपत्र वाचा, भाषा सुधारा आणि शाळेच्या उपक्रमांत भाग घ्या. बारावीनंतरच्या सरकारी परीक्षा आणि शिक्षक प्रशिक्षणाबद्दल शिक्षकांना विचारा.",
+      "hi": "अख़बार पढ़ो, अपनी भाषाएँ सुधारो और स्कूल की गतिविधियों में भाग लो। 12वीं के बाद सरकारी परीक्षाओं और शिक्षक प्रशिक्षण के बारे में अपने शिक्षक से पूछो।"
+    }
+  },
+  "SKILL": {
+    "name": {
+      "en": "Hands-on Skills",
+      "mr": "प्रत्यक्ष कौशल्ये",
+      "hi": "हुनर और कौशल"
+    },
+    "color": "#EA580C",
+    "icon": "construction",
+    "routes": {
+      "SHORT": [
+        "ITI Electrician / Fitter / Plumber / Welder",
+        "Beautician",
+        "Cook"
+      ],
+      "MEDIUM": [
+        "Hotel Management (Diploma)",
+        "Automobile Technician (Diploma)"
+      ],
+      "LONG": [
+        "B.Sc Hospitality",
+        "B.Voc Graduate"
+      ]
+    },
+    "subjects_to_focus": [
+      "Work Experience",
+      "Maths"
+    ],
+    "next_steps": {
+      "en": "Visit your nearest government ITI; many courses have low fees. Free skill courses are also on skillindiadigital.gov.in.",
+      "mr": "जवळच्या सरकारी ITI ला भेट द्या; अनेक कोर्सेसची फी कमी असते. skillindiadigital.gov.in वरही मोफत कौशल्य कोर्स आहेत.",
+      "hi": "नज़दीकी सरकारी ITI जाओ; कई कोर्स की फ़ीस कम है। skillindiadigital.gov.in पर भी मुफ़्त हुनर कोर्स हैं।"
+    }
+  }
+}
