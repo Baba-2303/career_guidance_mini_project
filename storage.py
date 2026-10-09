@@ -1,5 +1,6 @@
 """Saves survey responses to Supabase when configured, else to data/responses.csv."""
 import csv
+import uuid
 from pathlib import Path
 
 import httpx
@@ -9,7 +10,7 @@ from config import secret
 from scoring import QUESTIONS
 
 CSV_PATH = Path(__file__).parent / "data" / "responses.csv"
-COLUMNS = ["created_at", "name", "grade", "school", "lang",
+COLUMNS = ["id", "created_at", "name", "grade", "school", "lang",
            *[q["id"] for q in QUESTIONS], "typed_answers", "top1", "top2", "route", "source"]
 
 
@@ -24,10 +25,27 @@ def _supabase():
     return f'{url.rstrip("/")}/rest/v1/responses', headers
 
 
-def _save_csv(row):
-    is_new = not CSV_PATH.exists()
+def _read_csv():
+    """Reads the CSV, upgrading files saved by older versions (missing columns / ids)."""
+    if not CSV_PATH.exists():
+        return pd.DataFrame(columns=COLUMNS)
+    df = pd.read_csv(CSV_PATH, encoding="utf-8-sig", dtype={"id": str})
+    if list(df.columns) != COLUMNS or df["id"].isna().any():
+        df = df.reindex(columns=COLUMNS)
+        df["id"] = [i if isinstance(i, str) else uuid.uuid4().hex[:12] for i in df["id"]]
+        _write_csv(df)
+    return df
+
+
+def _write_csv(df):
     # utf-8-sig so Excel shows Marathi/Hindi names correctly
-    with CSV_PATH.open("a", newline="", encoding="utf-8-sig") as f:
+    df.to_csv(CSV_PATH, index=False, encoding="utf-8-sig")
+
+
+def _save_csv(row):
+    _read_csv()
+    is_new = not CSV_PATH.exists()
+    with CSV_PATH.open("a", newline="", encoding="utf-8-sig" if is_new else "utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNS)
         if is_new:
             w.writeheader()
@@ -36,6 +54,7 @@ def _save_csv(row):
 
 def save_response(row):
     """Returns where the row went: "supabase", "csv", or "csv_fallback" (Supabase failed)."""
+    row = {"id": uuid.uuid4().hex[:12], **row}
     sb = _supabase()
     if sb:
         endpoint, headers = sb
@@ -59,7 +78,20 @@ def load_responses():
         r.raise_for_status()
         frames.append(pd.DataFrame(r.json(), columns=COLUMNS))
     if CSV_PATH.exists():
-        frames.append(pd.read_csv(CSV_PATH, encoding="utf-8-sig"))
+        frames.append(_read_csv())
     if not frames:
         return pd.DataFrame(columns=COLUMNS)
     return pd.concat(frames, ignore_index=True)
+
+
+def delete_responses(ids):
+    """Deletes rows by id from wherever they live (Supabase and/or the CSV)."""
+    ids = [str(i) for i in ids]
+    sb = _supabase()
+    if sb:
+        endpoint, headers = sb
+        r = httpx.delete(endpoint, params={"id": f'in.({",".join(ids)})'}, headers=headers, timeout=15)
+        r.raise_for_status()
+    if CSV_PATH.exists():
+        df = _read_csv()
+        _write_csv(df[~df["id"].isin(ids)])

@@ -70,8 +70,13 @@ On the start screen, tap **Volunteer: Survey summary** (bottom). **Back to
 survey** returns. (There's no sidebar, so children can't wander in.)
 
 - Total students, schools, charts of career areas, routes, by class
-- Full table of responses
+- Full table of responses, newest first
 - **Download CSV** → opens in Excel
+
+**Deleting a mistaken or fake entry:** in *All responses*, tick the box at the
+left of each bad row → **Delete N selected** → check the names in the popup →
+**Yes, delete**. Charts update straight away. There's no undo, so download
+the CSV first if unsure.
 
 Screenshot the charts for the college report.
 

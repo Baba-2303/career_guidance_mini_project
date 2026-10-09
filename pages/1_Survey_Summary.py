@@ -5,7 +5,7 @@ import streamlit as st
 
 from config import secret
 from scoring import CAREERS
-from storage import load_responses
+from storage import delete_responses, load_responses
 
 st.set_page_config(page_title="Survey Summary", page_icon="📊", layout="centered")
 st.html("""<style>
@@ -25,6 +25,20 @@ def bars(counts, colors=None):
         for label, n in counts.items())
     st.html(rows)
 
+
+@st.dialog("Delete these responses?")
+def confirm_delete(rows):
+    for _, r in rows.iterrows():
+        st.write(f'- **{r["name"]}**, Class {r["grade"]}, {r["school"] if isinstance(r["school"], str) and r["school"] else "no school"} — {str(r["created_at"])[:16].replace("T", " ")}')
+    st.warning("This can't be undone. Download the CSV first if unsure.")
+    if st.button("Yes, delete", type="primary", icon=":material/delete:"):
+        delete_responses(rows["id"].tolist())
+        st.session_state.deleted = len(rows)
+        # A fresh table key clears the old tick-boxes, which would point at different rows now
+        st.session_state.table_v = st.session_state.get("table_v", 0) + 1
+        st.rerun()
+
+
 st.page_link("app.py", label="Back to survey", icon=":material/arrow_back:")
 st.title("Survey Summary")
 
@@ -42,6 +56,9 @@ try:
 except Exception as e:
     st.error(f"Could not load responses: {e}")
     st.stop()
+
+if st.session_state.pop("deleted", None):
+    st.toast("Deleted.", icon=":material/check:")
 
 if df.empty:
     st.write("No responses yet.")
@@ -68,7 +85,14 @@ st.subheader("Top career area by class")
 st.dataframe(pd.crosstab(df["Top career area"], df["grade"]).rename(columns=lambda g: f"Class {g}"))
 
 st.subheader("All responses")
-st.dataframe(df.drop(columns=["Top career area"]), hide_index=True)
+st.caption("Tick the rows of mistaken or fake entries, then press Delete.")
+view = df.drop(columns=["Top career area"]).sort_values("created_at", ascending=False)
+picked = st.dataframe(view, hide_index=True, column_config={"id": None}, on_select="rerun",
+                      selection_mode="multi-row", key=f'responses_{st.session_state.get("table_v", 0)}')
+chosen = view.iloc[picked.selection.rows]
+if len(chosen) and st.button(f"Delete {len(chosen)} selected", icon=":material/delete:"):
+    confirm_delete(chosen)
+
 st.download_button("Download CSV (opens in Excel)",
-                   df.drop(columns=["Top career area"]).to_csv(index=False).encode("utf-8-sig"),
+                   view.drop(columns=["id"]).to_csv(index=False).encode("utf-8-sig"),
                    "survey_responses.csv", "text/csv")

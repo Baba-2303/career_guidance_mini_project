@@ -1,6 +1,6 @@
 -- Run once in Supabase → SQL Editor. Creates the table the app saves responses into.
 create table if not exists responses (
-  id bigint generated always as identity primary key,
+  id text primary key,  -- short random id set by the app; used to delete rows
   created_at timestamptz not null default now(),
   name text not null,
   grade smallint not null,

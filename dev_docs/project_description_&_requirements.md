@@ -60,6 +60,11 @@ volunteer reaches the summary via a link on the start screen.
 Separate page **Survey Summary**: total students, bar chart of top cluster
 counts, route split, CSV download — for the college report.
 
+**Deleting responses [2026-10-09]:** every response has a 12-char random
+`id` (set in `storage.save_response`). Summary table → tick rows → confirm
+dialog → `storage.delete_responses(ids)` removes them from Supabase and the
+CSV. CSVs saved before ids existed get ids added automatically on first read.
+
 ---
 
 ## The 6 career clusters
@@ -241,9 +246,9 @@ bad Groq key, unreachable Supabase, password-locked summary page.
 | `style.css` | All custom styling |
 | `scoring.py` | Loads JSON data, `score()` → top 2 clusters + route |
 | `advisor.py` | Groq: `classify_typed` + guidance message (8 s timeout each); offline message |
-| `storage.py` | Save/load responses (Supabase or CSV) |
+| `storage.py` | Save/load/delete responses (Supabase or CSV) |
 | `config.py` | `secret()` — reads secrets, returns default if none |
-| `pages/1_Survey_Summary.py` | Charts, table, CSV download; `SUMMARY_PASSWORD` lock |
+| `pages/1_Survey_Summary.py` | Charts, table, delete selected rows, CSV download; `SUMMARY_PASSWORD` lock |
 | `data/questions.json`, `careers.json`, `ui_text.json` | All content, en/mr/hi |
 | `supabase_table.sql` | One-time table setup (RLS on, no policies) |
 | `.streamlit/secrets.toml.example` | Every secret name with placeholders |
